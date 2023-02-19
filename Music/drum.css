@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(1, 17, 66);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.music{
+    margin-top: 80px;
+    position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(235, 235, 235), rgb(99, 98, 98), #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.set{
+    text-align: center;
+
+}
+
+button{
+    font-size: 80px;
+    margin: 10rem 3rem 0 0;
+    padding: 35px;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.05s;
+    border-color: black;
+    box-shadow: 0 0 15px rebeccapurple;
+}
+
+.a-drum{
+    background: url(/images-drum/cymbal\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.s-drum{
+    background: url(/images-drum/tome\ drum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.d-drum{
+    background: url(/images-drum/snare\ drum.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.space-drum{
+    background: url(/images-drum/kick\ bass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    top: 60px;
+    padding-bottom: 30px;
+
+}
+
+.j-drum{
+    background: url(/images-drum/snare\ drum.jpg);
+    background-size: cover;
+    padding-left: 60px;
+    border-radius: 10px;
+}
+
+.k-drum{
+    background: url(/images-drum/tome\ drum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding-bottom: 35px;
+}
+
+.l-drum{
+    background: url(/images-drum/cymbal\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 55px;
+    border-radius: 10px;
+    padding-bottom: 35px;
+}
+
+button:active{
+    color: red;
+    box-shadow: 0 0 15px red;
+}
+
+.go{
+    position: absolute;
+    bottom: 10px;
+  }
+.back{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: rgb(0, 10, 61);
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+ }
+
+ .back:active{
+    transform:translateX(-20%)
+ }
